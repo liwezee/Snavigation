@@ -10,7 +10,7 @@ export const getAdcode = async (key) => {
   return axios({
     method: "GET",
     url: "https://restapi.amap.com/v3/ip",
-    params: {d7492472540d0eed580d3d78018415b2},
+    params: { key },
   });
 };
 
@@ -19,7 +19,7 @@ export const getWeather = async (key, city) => {
   return axios({
     method: "GET",
     url: "https://restapi.amap.com/v3/weather/weatherInfo",
-    params: {	d7492472540d0eed580d3d78018415b2, city, extensions: "base" },
+    params: {	key, city, extensions: "base" },
   });
 };
 
