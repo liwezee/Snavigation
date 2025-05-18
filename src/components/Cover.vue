@@ -35,24 +35,24 @@ const setBgUrl = () => {
   const { backgroundType } = set;
   switch (backgroundType) {
     case 0:
-      bgUrl.value = `/background/bg${bgRandom}.jpg`;
+      bgUrl.value = "https://t.alcy.cc/fj";
       break;
     case 1: {
       const isMobile = window.innerWidth < 768;
-      bgUrl.value = `https://api.dujin.org/bing/${isMobile ? "m" : "1920"}.php`;
+      bgUrl.value = "https://t.alcy.cc/mp";
       break;
     }
     case 2:
-      bgUrl.value = "https://api.aixiaowai.cn/gqapi/gqapi.php";
+      bgUrl.value = "https://t.alcy.cc/fj";
       break;
     case 3:
-      bgUrl.value = "https://api.aixiaowai.cn/api/api.php";
+      bgUrl.value = "https://t.alcy.cc/fj";
       break;
     case 4:
       bgUrl.value = set.backgroundCustom;
       break;
     default:
-      bgUrl.value = `/background/bg${bgRandom}.jpg`;
+      bgUrl.value = "https://t.alcy.cc/fj";
       break;
   }
 };
@@ -78,7 +78,7 @@ const imgAnimationEnd = () => {
 const imgLoadError = () => {
   console.error("壁纸加载失败：", bgUrl.value);
   $message.error("壁纸加载失败，已临时切换回默认");
-  bgUrl.value = `/background/bg${bgRandom}.jpg`;
+  bgUrl.value = "https://t.alcy.cc/fj";
 };
 
 onMounted(() => {
