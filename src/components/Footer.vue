@@ -6,7 +6,7 @@
       <span class="anthor" @click="jumpTo(copyrightLink ?? 'https://github.com/liwezee/Snavigation')">
         {{ siteAnthor }}
       </span>
-      <span v-if="icp" class="icp" @click="jumpTo('https://beian.miit.gov.cn')">
+      <span v-if="icp" class="icp" @click="jumpTo('https://icp.gov.moe/?keyword=20222216')">
         {{ icp }}
       </span>
       <span class="about" @click="aboutSiteModal = true">关于</span>
